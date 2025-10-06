@@ -244,6 +244,38 @@
             background: #144272;
             transform: translateY(-2px);
         }
+        
+        .document-links {
+            border-top: 2px dashed #e0e0e0;
+            padding-top: 20px;
+        }
+        
+        .btn-document {
+            background: white;
+            color: var(--navy-blue);
+            border: 2px solid var(--lime-green);
+            border-radius: 10px;
+            padding: 12px 20px;
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+        
+        .btn-document:hover {
+            background: linear-gradient(135deg, var(--lime-green), #B8E056);
+            color: var(--navy-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(157, 204, 60, 0.3);
+            text-decoration: none;
+        }
+        
+        .btn-document i {
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 <body>
@@ -334,7 +366,17 @@
                     </div>
                     <h5>Terima Kasih!</h5>
                     <p>Kehadiran Anda telah tercatat dengan baik. Selamat mengikuti acara Sosialisasi Kebijakan Umum Direksi (KUD) Tahun 2026.</p>
-                    <p class="mb-0"><strong>Semoga acara berjalan lancar dan bermanfaat!</strong></p>
+                    <p class="mb-3"><strong>Semoga acara berjalan lancar dan bermanfaat!</strong></p>
+                    
+                    <div class="document-links mt-4">
+                        <p class="text-start mb-2"><strong><i class="bi bi-file-earmark-text"></i> Dokumen Acara:</strong></p>
+                        <a href="https://drive.google.com/file/d/1G5plYcU8x0oIMqaD9YupVc28JYcvsO7X/view?usp=sharing" target="_blank" class="btn btn-document mb-2 w-100">
+                            <i class="bi bi-file-pdf"></i> Dokumen KUD 2026
+                        </a>
+                        <a href="https://drive.google.com/file/d/1a_lt851tc506DuvnEfXIswO9YBeHMX-x/view?usp=sharing" target="_blank" class="btn btn-document w-100">
+                            <i class="bi bi-file-pdf"></i> Dokumen Penyusunan Proker dan RPPB
+                        </a>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Tutup</button>
